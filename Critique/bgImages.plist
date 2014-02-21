@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Image</key>
+		<string>only-god2.jpg</string>
+		<key>Title</key>
+		<string>Only God Forgives</string>
+		<key>Year</key>
+		<string>2013</string>
+		<key>Director</key>
+		<string>Nicolas Winding Refn</string>
+	</dict>
+	<dict>
+		<key>Image</key>
+		<string>tiffanys.jpg</string>
+		<key>Title</key>
+		<string>Breakfast at Tiffany&apos;s</string>
+		<key>Year</key>
+		<string>1961</string>
+		<key>Director</key>
+		<string>Blake Edwards</string>
+	</dict>
+	<dict>
+		<key>Image</key>
+		<string>francesha.jpg</string>
+		<key>Title</key>
+		<string>Frances Ha</string>
+		<key>Year</key>
+		<string>2013</string>
+		<key>Director</key>
+		<string>Noah Baumbach</string>
+	</dict>
+	<dict>
+		<key>Image</key>
+		<string>smurfs2.jpg</string>
+		<key>Title</key>
+		<string>The Smurfs 2</string>
+		<key>Year</key>
+		<string>2013</string>
+		<key>Director</key>
+		<string>Raja Gosnell</string>
+	</dict>
+	<dict>
+		<key>Image</key>
+		<string>planes.jpg</string>
+		<key>Title</key>
+		<string>Planes</string>
+		<key>Year</key>
+		<string>2013</string>
+		<key>Director</key>
+		<string>Klay Hall</string>
+	</dict>
+	<dict>
+		<key>Image</key>
+		<string>odyssey.jpg</string>
+		<key>Title</key>
+		<string>2001: Space Odyssey</string>
+		<key>Year</key>
+		<string>1968</string>
+		<key>Director</key>
+		<string>Stanley Kubrick</string>
+	</dict>
+	<dict>
+		<key>Image</key>
+		<string>jeune.jpg</string>
+		<key>Title</key>
+		<string>Jeune et Jolie</string>
+		<key>Year</key>
+		<string>2013</string>
+		<key>Director</key>
+		<string>François Ozone</string>
+	</dict>
+</array>
+</plist>
