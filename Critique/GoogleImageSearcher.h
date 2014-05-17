@@ -59,7 +59,6 @@
 #define GOOGLE_API_RESPONSE_IMAGE_THUMB_HEIGHT_FIELD @"thumbnailHeight"
 
 
-
 @interface GoogleImageSearcher : ImageSearcher
 
 

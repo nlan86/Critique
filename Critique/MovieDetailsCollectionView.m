@@ -37,7 +37,9 @@
     
 //    self.movieThumbsCurrentlyDownloading = [nsar; //cancel previous downloads
     
-    NSString *query = [NSString stringWithFormat:@"\"%@\" %@",self.selectedMovieRecord.movieTitle, self.selectedMovieRecord.movieYear]; //title_year_'film'_'-poster'
+    NSString *query = [NSString stringWithFormat:@"%@ %@", [self.selectedMovieRecord getFormattedName], [self.selectedMovieRecord getFormattedYear]] ;
+    
+    //NSString *query = [NSString stringWithFormat:@"\"%@\" %@",self.selectedMovieRecord.movieTitle, self.selectedMovieRecord.movieYear]; //title_year_'film'_'-poster'
     
     //set image download queue
     __weak MovieDetailsCollectionView *weakSelf = self;

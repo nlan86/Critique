@@ -132,14 +132,6 @@
     self.filmResultsTable.dataSource = mainResultsTableDel;
     mainResultsTableDel.movieResultsTableView = self.filmResultsTable;
     [self.filmResultsTable reloadData];
-    
-    //setup search field
-//    self.movieNameTextField.layer.cornerRadius=1.0f;
-//    self.movieNameTextField.layer.masksToBounds=YES;
-//    self.movieNameTextField.layer.borderColor=[[UIColor whiteColor]CGColor];
-//    self.movieNameTextField.layer.borderWidth= 1.0f;
-//    self.movieNameTextField.layer.backgroundColor = CGColorCreateCopyWithAlpha([[UIColor whiteColor] CGColor], 0.3f);
-
 
     //init logo text
     [self.critiqueLogoLabel setText:CRITIQUE_LOOG_QUESTION];
@@ -248,6 +240,7 @@
         
         return;
     }
+    
     resultsDisplayed=YES;
     [self manageViewsEndUpBlurred:YES postersHidden:YES imagesHidden:YES];
     

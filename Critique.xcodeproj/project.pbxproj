@@ -509,6 +509,11 @@
 				CLASSPREFIX = Critique;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Nur;
+				TargetAttributes = {
+					CBE0BBFF179BD7B500CB70B2 = {
+						DevelopmentTeam = 3LHZ7X9G2Y;
+					};
+				};
 			};
 			buildConfigurationList = CBE0BBFB179BD7B500CB70B2 /* Build configuration list for PBXProject "Critique" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -691,10 +696,13 @@
 		CBE0BC24179BD7B500CB70B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Critique/Critique-Prefix.pch";
 				INFOPLIST_FILE = "Critique/Critique-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -702,10 +710,13 @@
 		CBE0BC25179BD7B500CB70B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Critique/Critique-Prefix.pch";
 				INFOPLIST_FILE = "Critique/Critique-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

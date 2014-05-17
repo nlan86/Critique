@@ -18,6 +18,10 @@
 @property (nonatomic,strong) UIImage *moviePosterImage;
 @property (nonatomic, strong) NSMutableArray *imageSearchResults;
 
+
 - (NSString*) getFormattedNameAndYear;
+- (NSString*) getFormattedName;
+- (NSString*) getFormattedYear;
+
 
 @end
