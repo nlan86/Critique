@@ -80,7 +80,7 @@
     NSDictionary* json = [NSJSONSerialization JSONObjectWithData:currentMovieDataObject options:kNilOptions error:&error]; //TMDB Returns JSON Dictionary
     
     NSArray *resultsArray = [json objectForKey:JSON_RESULTS_FIELD];
-    NSInteger numOfResults = [[CritiqueJSONRestHandler safeJsonGetStringForKey:JSON_TOTAL_RESULTS_NUM_FIELD fromObject:json] integerValue];
+    NSInteger numOfResults = MIN([[CritiqueJSONRestHandler safeJsonGetStringForKey:JSON_TOTAL_RESULTS_NUM_FIELD fromObject:json] integerValue], [resultsArray count]);
 
     NSLog(@"%@: Num of results for movie %@: %d\n",API_LOG_NAME,query,numOfResults);
     

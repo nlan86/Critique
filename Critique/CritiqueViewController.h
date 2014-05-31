@@ -12,6 +12,7 @@
 #import "ReviewScreenViewController.h"
 #import "FilmSearchTextField.h"
 #import "GoogleImageSearcher.h"
+#import "TMDBImageSearcher.h"
 #import "MoviesAPI.h"
 
 @interface CritiqueViewController : UIViewController <UITextFieldDelegate, UIGestureRecognizerDelegate, ReviewScreenViewDelegate>

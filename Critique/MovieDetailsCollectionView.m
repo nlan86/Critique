@@ -32,14 +32,17 @@
 -(void)initNewQueryWithMovieRecord: (MovieRecord*)newMovieRecord {
 
     self.selectedMovieRecord = newMovieRecord;
-    self.movieThumbsCurrentlyDownloading = nil; //de-alloc current download list
-    NSString *searchTitle = [NSString stringWithFormat:@"%@ %@",newMovieRecord.movieTitle,newMovieRecord.originalTitle]; 
+    self.movieThumbsCurrentlyDownloading = nil; //de-alloc current download list    
     
-//    self.movieThumbsCurrentlyDownloading = [nsar; //cancel previous downloads
+    NSString *query;
     
-    NSString *query = [NSString stringWithFormat:@"%@ %@", [self.selectedMovieRecord getFormattedName], [self.selectedMovieRecord getFormattedYear]] ;
+    if (IMAGE_SEARCH_USING_TMDB) {
+        query = [self.selectedMovieRecord movieID];
+    }
+    else {
     
-    //NSString *query = [NSString stringWithFormat:@"\"%@\" %@",self.selectedMovieRecord.movieTitle, self.selectedMovieRecord.movieYear]; //title_year_'film'_'-poster'
+        query = [NSString stringWithFormat:@"%@ %@", [self.selectedMovieRecord getFormattedName], [self.selectedMovieRecord getFormattedYear]] ;
+    }
     
     //set image download queue
     __weak MovieDetailsCollectionView *weakSelf = self;
@@ -92,6 +95,14 @@
     [cell.loadSpinner startAnimating];
     
     ImageSearchResult *curImgResult = [self.imageSearcher getImageResults:indexPath.row];
+    
+    if (curImgResult == nil) { //no result for cell
+
+        cell.imageView.image = nil;
+        cell.imageView.backgroundColor = GRAPHICS_TRANSPARENT_BG_WHITE;
+                [cell.loadSpinner stopAnimating];
+        return cell;
+    }
     
     //no image loaded yet for image result
     if (!curImgResult.imageThumb) {

@@ -23,6 +23,8 @@
 #define CRITIQUE_API_IMAGE_SEARCH_RESULTS 10 //30 d'habitude
 #define CRITIQUE_DEFAULT_API TMDB_MoviesAPI
 
+#define IMAGE_SEARCH_USING_TMDB YES
+
 #define CRITIQUE_LOOG_QUESTION @"What did you watch?"
 
 #define SEGUE_IDENTIFIER_MAIN_TO_REVIEW @"ShowReview"

@@ -23,14 +23,6 @@
 #import "MoviesAPI.h"
 #import "ImageSearchResult.h"
 
-@interface GoogleImageSearcher ()  {
-
-
-    
-}
-
-@end
-
 
 @implementation GoogleImageSearcher
 
@@ -116,7 +108,6 @@
     NSInteger neededPages = (num / GOOGLE_API_MAX_RESULTS_PER_PAGE);
     NSInteger currentStartIndex = 1;
     
-    
     NSString *requestTemp=[NSString stringWithFormat:@"%@?%@&%@&%@&%@&%@&%@&%@&%@&%@&%@",
                            GOOGLE_API_BASE_URI, //Standalone
                            GOOGLE_API_SEARCH_KEY_FIELD,
@@ -160,15 +151,7 @@
     return [currentImageResults count];
 }
 
--(ImageSearchResult*) getImageResults: (NSInteger)index {
-    
-    if (currentImageResults && [currentImageResults count]>0) {
-        return [currentImageResults objectAtIndex:index];
-    }
-    
-    return nil;
-    
-}
+
 
 - (NSMutableArray*) getResultsArray {
     return currentImageResults;

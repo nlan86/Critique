@@ -23,6 +23,7 @@
 @interface CritiqueViewController () {
     FilmResultsTableDelegate *mainResultsTableDel;
     GoogleImageSearcher *googleImageSearcher;
+    TMDBImageSearcher *tmdbImageSearcher;
     BOOL resultsDisplayed, curretlyBlurred, currentlyEditing, displayLastPosters, displayLastImages;
     CGFloat screenWidth, screenHeight;
     CGPoint lastLogoCenter;
@@ -62,7 +63,10 @@
 
     //init image searcher
     googleImageSearcher = [[GoogleImageSearcher alloc] init];
+    tmdbImageSearcher=[[TMDBImageSearcher alloc] init];
     movieDetailsCollectionViewHandler.imageSearcher = googleImageSearcher;
+    movieDetailsCollectionViewHandler.imageSearcher = tmdbImageSearcher;
+
     
     //init bg switch timer
     bgSwitchTimer = [NSTimer scheduledTimerWithTimeInterval:GRAPHICS_BG_SWITCH_INTERVAL target:self selector:@selector(switchBGImage) userInfo:nil repeats:YES];
@@ -383,7 +387,6 @@
 
 //    [self.movieNameTextField setText:[movieRecord movieTitle]];
     [self.critiqueLogoLabel setText:[movieRecord getFormattedNameAndYear]]; //set logo to be movie name
-    
     
     [movieDetailsCollectionViewHandler initNewQueryWithMovieRecord:movieRecord];
     [self.movieDetailsCollectionView reloadData];

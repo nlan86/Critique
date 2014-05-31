@@ -32,7 +32,7 @@
 
 -(ImageSearchResult*) getImageResults: (NSInteger)index {
     
-    if (currentImageResults && [currentImageResults count]>0) {
+    if (currentImageResults && [currentImageResults count]>index) {
         return [currentImageResults objectAtIndex:index];
     }
     
