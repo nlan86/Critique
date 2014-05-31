@@ -13,10 +13,17 @@
 
 @interface ImageSearcher : NSObject
 
+{
+    @protected NSMutableDictionary *cachedQueries; //cached results
+    @protected NSMutableArray *currentImageResults; //image results
+    @protected NSData* currentQueryJSONData;
+}
+
 - (NSInteger) sendQuery: (NSString*)query numOfSuggestion:(NSInteger)num;
 - (NSInteger) numOfResults;
 -(ImageSearchResult*) getImageResults: (NSInteger)index;
 - (NSMutableArray*) getResultsArray;
 - (void) resetQuery;
+-(BOOL) queryExists: (NSString*)query;
 
 @end

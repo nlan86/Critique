@@ -8,25 +8,56 @@
 
 #import "ImageSearcher.h"
 
+
 @implementation ImageSearcher
+
+-(id) init {
+    self = [super init];
+    if (self) {
+        cachedQueries = [NSMutableDictionary dictionary];
+    }
+    
+    return self;
+}
 
 - (NSInteger) sendQuery: (NSString*)query numOfSuggestion:(NSInteger)num {
     return 0;
 }
 
--(NSInteger) numOfResults {
-    return 0;
+- (void) resetQuery {
+    currentQueryJSONData=nil;
+    currentImageResults=nil;
 }
 
-- (void) resetQuery {
-}
 
 -(ImageSearchResult*) getImageResults: (NSInteger)index {
+    
+    if (currentImageResults && [currentImageResults count]>0) {
+        return [currentImageResults objectAtIndex:index];
+    }
+    
     return nil;
+    
 }
 
 - (NSMutableArray*) getResultsArray {
-    return nil;
+    return currentImageResults;
 }
+
+
+-(BOOL) queryExists: (NSString*)query {
+    if ([cachedQueries valueForKey:query]) {
+        NSLog(@"IMAGE SEARCH: Query %@ cached!", query);
+        return YES;
+    }
+    return NO;
+}
+
+- (NSInteger) numOfResults {
+    if (currentImageResults)
+        return [currentImageResults count];
+    return 0;
+}
+
 
 @end

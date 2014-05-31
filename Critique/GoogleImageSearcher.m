@@ -25,9 +25,7 @@
 
 @interface GoogleImageSearcher ()  {
 
-    NSMutableDictionary *cachedQueries; //results cache
-    NSData* currentQueryJSONData;
-    NSMutableArray *currentImageResults;
+
     
 }
 
@@ -36,20 +34,6 @@
 
 @implementation GoogleImageSearcher
 
-
-- (void) resetQuery {
-    currentQueryJSONData=nil;
-    currentImageResults=nil;
-}
-
--(id) init {
-    self = [super init];
-    if (self) {
-        cachedQueries = [NSMutableDictionary dictionary];
-    }
-    
-    return self;
-}
 
 //returns number of results de facto
 - (NSInteger) getAppendImageResultsFromData:(NSData *)responseData toResultsArray:(NSMutableArray*)resultsArray numOfResults:(NSInteger)num {

@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ImageSearcher.h"
 
-
-
 #define GOOGLE_API_NAME @"GOOGLE_IMAGES_API"
 
 #define GOOGLE_API_BASE_URI @"https://www.googleapis.com/customsearch/v1"

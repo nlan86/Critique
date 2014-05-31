@@ -340,9 +340,9 @@
                       % [bgPicsArray count]) ;
     
     UIImageView *newImgView = [[UIImageView alloc] init];
-    newImgView.image = [UIImage imageNamed:[[bgPicsArray objectAtIndex:currentBGImage] objectForKey:PLIST_BG_IMAGE_IMAGENAME_FIELD]];
+    newImgView.image = [UIImage imageNamed:[[bgPicsArray objectAtIndex:currentBGImage] objectForKey:PLIST_BG_IMAGE_IMAGENAME_FIELD]]; //get current image
     
-    if (curretlyBlurred) {
+    if (curretlyBlurred) { //
         [blurManager asyncBlur:newImgView thenPutInto:self.bgImgView imageTag:[[bgPicsArray objectAtIndex:currentBGImage] objectForKey:PLIST_BG_IMAGE_IMAGENAME_FIELD]];
     }
     else {

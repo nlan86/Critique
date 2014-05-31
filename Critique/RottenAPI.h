@@ -14,5 +14,4 @@
 @property NSString *currentMovieSearchName;
 @property NSMutableArray *currentQueryMovieRecordResultsArray;
 
-
 @end

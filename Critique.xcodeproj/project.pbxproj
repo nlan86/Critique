@@ -51,6 +51,7 @@
 		CB75847D17D78E5400A00F6C /* planes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB75847B17D78E5400A00F6C /* planes.jpg */; };
 		CB75847F17D78FF700A00F6C /* only-god2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB75847E17D78FF700A00F6C /* only-god2.jpg */; };
 		CB75848117D7911F00A00F6C /* bg-gradiant-top.png in Resources */ = {isa = PBXBuildFile; fileRef = CB75848017D7911F00A00F6C /* bg-gradiant-top.png */; };
+		CB9DA737193A5AA8002A1365 /* TMDBImageSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA736193A5AA8002A1365 /* TMDBImageSearcher.m */; };
 		CBBF5F1B17D26DC5007AB3C0 /* MBSpinningCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBF5F1A17D26DC5007AB3C0 /* MBSpinningCircle.m */; };
 		CBBF5F1D17D26F11007AB3C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBF5F1C17D26F11007AB3C0 /* QuartzCore.framework */; };
 		CBCCD96D17AEBFEF00872CF0 /* bgImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBCCD96C17AEBFEF00872CF0 /* bgImages.plist */; };
@@ -148,6 +149,8 @@
 		CB75847B17D78E5400A00F6C /* planes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planes.jpg; sourceTree = "<group>"; };
 		CB75847E17D78FF700A00F6C /* only-god2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "only-god2.jpg"; sourceTree = "<group>"; };
 		CB75848017D7911F00A00F6C /* bg-gradiant-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-gradiant-top.png"; path = "Critique/bg-gradiant-top.png"; sourceTree = SOURCE_ROOT; };
+		CB9DA735193A5AA8002A1365 /* TMDBImageSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDBImageSearcher.h; sourceTree = "<group>"; };
+		CB9DA736193A5AA8002A1365 /* TMDBImageSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDBImageSearcher.m; sourceTree = "<group>"; };
 		CBBF5F1917D26DC5007AB3C0 /* MBSpinningCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSpinningCircle.h; sourceTree = "<group>"; };
 		CBBF5F1A17D26DC5007AB3C0 /* MBSpinningCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSpinningCircle.m; sourceTree = "<group>"; };
 		CBBF5F1C17D26F11007AB3C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -327,6 +330,32 @@
 			name = BGPics;
 			sourceTree = "<group>";
 		};
+		CB9DA731193A4802002A1365 /* BlurManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB27874317AE4B0F00A08380 /* BlurManager.h */,
+				CB27874417AE4B0F00A08380 /* BlurManager.m */,
+			);
+			name = BlurManager;
+			sourceTree = "<group>";
+		};
+		CB9DA733193A4821002A1365 /* MoviesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CBE0BC3A179BD7EE00CB70B2 /* MoviesAPI.h */,
+				CBE0BC3B179BD7EE00CB70B2 /* MoviesAPI.m */,
+				CBE0BC3E179BD7EE00CB70B2 /* RottenAPI.h */,
+				CBE0BC3F179BD7EE00CB70B2 /* RottenAPI.m */,
+				CBE0BC40179BD7EE00CB70B2 /* TMDB_MoviesAPI.h */,
+				CBE0BC41179BD7EE00CB70B2 /* TMDB_MoviesAPI.m */,
+				CBE0BC38179BD7EE00CB70B2 /* MovieRecord.h */,
+				CBE0BC39179BD7EE00CB70B2 /* MovieRecord.m */,
+				CBE0BC3C179BD7EE00CB70B2 /* MyMoviesAPI.h */,
+				CBE0BC3D179BD7EE00CB70B2 /* MyMoviesAPI.m */,
+			);
+			name = MoviesAPI;
+			sourceTree = "<group>";
+		};
 		CBBF5EC017D26D9F007AB3C0 /* CircleHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,17 +401,19 @@
 			name = ReviewScreen;
 			sourceTree = "<group>";
 		};
-		CBD8D06C17A4105B008723F6 /* ImageSearcher */ = {
+		CBD8D06C17A4105B008723F6 /* ImageSearchers */ = {
 			isa = PBXGroup;
 			children = (
 				CBE0BC34179BD7EE00CB70B2 /* ImageSearcher.h */,
 				CBE0BC35179BD7EE00CB70B2 /* ImageSearcher.m */,
 				CBE0BC30179BD7EE00CB70B2 /* GoogleImageSearcher.h */,
 				CBE0BC31179BD7EE00CB70B2 /* GoogleImageSearcher.m */,
+				CB9DA735193A5AA8002A1365 /* TMDBImageSearcher.h */,
+				CB9DA736193A5AA8002A1365 /* TMDBImageSearcher.m */,
 				CBE0BC55179BEEB900CB70B2 /* ImageSearchResult.h */,
 				CBE0BC56179BEEB900CB70B2 /* ImageSearchResult.m */,
 			);
-			name = ImageSearcher;
+			name = ImageSearchers;
 			sourceTree = "<group>";
 		};
 		CBE0BBF7179BD7B500CB70B2 = {
@@ -429,8 +460,6 @@
 				CBE0BC12179BD7B500CB70B2 /* CritiqueAppDelegate.h */,
 				CBE0BC13179BD7B500CB70B2 /* CritiqueAppDelegate.m */,
 				CBE0BC0A179BD7B500CB70B2 /* Supporting Files */,
-				CB27874317AE4B0F00A08380 /* BlurManager.h */,
-				CB27874417AE4B0F00A08380 /* BlurManager.m */,
 			);
 			path = Critique;
 			sourceTree = "<group>";
@@ -462,17 +491,9 @@
 		CBE0BC51179BD80500CB70B2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CBD8D06C17A4105B008723F6 /* ImageSearcher */,
-				CBE0BC38179BD7EE00CB70B2 /* MovieRecord.h */,
-				CBE0BC39179BD7EE00CB70B2 /* MovieRecord.m */,
-				CBE0BC3A179BD7EE00CB70B2 /* MoviesAPI.h */,
-				CBE0BC3B179BD7EE00CB70B2 /* MoviesAPI.m */,
-				CBE0BC3C179BD7EE00CB70B2 /* MyMoviesAPI.h */,
-				CBE0BC3D179BD7EE00CB70B2 /* MyMoviesAPI.m */,
-				CBE0BC3E179BD7EE00CB70B2 /* RottenAPI.h */,
-				CBE0BC3F179BD7EE00CB70B2 /* RottenAPI.m */,
-				CBE0BC40179BD7EE00CB70B2 /* TMDB_MoviesAPI.h */,
-				CBE0BC41179BD7EE00CB70B2 /* TMDB_MoviesAPI.m */,
+				CB9DA731193A4802002A1365 /* BlurManager */,
+				CBD8D06C17A4105B008723F6 /* ImageSearchers */,
+				CB9DA733193A4821002A1365 /* MoviesAPI */,
 				CBE0BC26179BD7EE00CB70B2 /* CritiqueJSONRestHandler.h */,
 				CBE0BC27179BD7EE00CB70B2 /* CritiqueJSONRestHandler.m */,
 				CBCCD96E17AEC17500872CF0 /* Plists */,
@@ -598,6 +619,7 @@
 				CB11C88617AD4E730023C28B /* MWPhotoBrowser.m in Sources */,
 				CB11C88717AD4E730023C28B /* MWTapDetectingImageView.m in Sources */,
 				CB11C88817AD4E730023C28B /* MWTapDetectingView.m in Sources */,
+				CB9DA737193A5AA8002A1365 /* TMDBImageSearcher.m in Sources */,
 				CB11C88917AD4E730023C28B /* MWZoomingScrollView.m in Sources */,
 				CB11C88A17AD4E730023C28B /* MBProgressHUD.m in Sources */,
 				CB11C88E17AD4E730023C28B /* SDImageCache.m in Sources */,

@@ -35,7 +35,6 @@
 
 -(NSString*)getMovieID:(NSInteger)index {
         return [(MovieRecord*)[self.currentQueryMovieRecordResultsArray objectAtIndex:index] movieID];
-
 }
 
 -(NSString*)getMovieYear:(NSInteger)index{
