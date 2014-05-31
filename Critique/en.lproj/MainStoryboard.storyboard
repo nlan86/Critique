@@ -78,7 +78,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="22" sectionFooterHeight="22" id="i4J-Vg-4rh">
-                                <rect key="frame" x="0.0" y="98.000000967410628" width="320" height="445"/>
+                                <rect key="frame" x="0.0" y="98.000001320019649" width="320" height="445"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <inset key="contentInset" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
@@ -155,12 +155,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Click here to start..." textAlignment="center" minimumFontSize="14" clearButtonMode="whileEditing" id="8uL-dw-1F5" customClass="FilmSearchTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type movie name here..." textAlignment="center" minimumFontSize="14" clearButtonMode="whileEditing" id="8uL-dw-1F5" customClass="FilmSearchTextField">
                                 <rect key="frame" x="39" y="523" width="243" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="search"/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="rTu-0N-tGG"/>
                                 </connections>

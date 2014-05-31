@@ -52,6 +52,7 @@
 		CB75847F17D78FF700A00F6C /* only-god2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB75847E17D78FF700A00F6C /* only-god2.jpg */; };
 		CB75848117D7911F00A00F6C /* bg-gradiant-top.png in Resources */ = {isa = PBXBuildFile; fileRef = CB75848017D7911F00A00F6C /* bg-gradiant-top.png */; };
 		CB9DA737193A5AA8002A1365 /* TMDBImageSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DA736193A5AA8002A1365 /* TMDBImageSearcher.m */; };
+		CB9DA739193A8319002A1365 /* zissou.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9DA738193A8319002A1365 /* zissou.png */; };
 		CBBF5F1B17D26DC5007AB3C0 /* MBSpinningCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBF5F1A17D26DC5007AB3C0 /* MBSpinningCircle.m */; };
 		CBBF5F1D17D26F11007AB3C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBF5F1C17D26F11007AB3C0 /* QuartzCore.framework */; };
 		CBCCD96D17AEBFEF00872CF0 /* bgImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBCCD96C17AEBFEF00872CF0 /* bgImages.plist */; };
@@ -151,6 +152,7 @@
 		CB75848017D7911F00A00F6C /* bg-gradiant-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-gradiant-top.png"; path = "Critique/bg-gradiant-top.png"; sourceTree = SOURCE_ROOT; };
 		CB9DA735193A5AA8002A1365 /* TMDBImageSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDBImageSearcher.h; sourceTree = "<group>"; };
 		CB9DA736193A5AA8002A1365 /* TMDBImageSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDBImageSearcher.m; sourceTree = "<group>"; };
+		CB9DA738193A8319002A1365 /* zissou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zissou.png; sourceTree = "<group>"; };
 		CBBF5F1917D26DC5007AB3C0 /* MBSpinningCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSpinningCircle.h; sourceTree = "<group>"; };
 		CBBF5F1A17D26DC5007AB3C0 /* MBSpinningCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSpinningCircle.m; sourceTree = "<group>"; };
 		CBBF5F1C17D26F11007AB3C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -314,6 +316,7 @@
 		CB333EB017A9420D00C4E27E /* BGPics */ = {
 			isa = PBXGroup;
 			children = (
+				CB9DA738193A8319002A1365 /* zissou.png */,
 				CB75847E17D78FF700A00F6C /* only-god2.jpg */,
 				CB75847A17D78E5400A00F6C /* jeune.jpg */,
 				CB75847B17D78E5400A00F6C /* planes.jpg */,
@@ -584,6 +587,7 @@
 				CB34FC5B17B52F350023BE08 /* x.png in Resources */,
 				CB75847C17D78E5400A00F6C /* jeune.jpg in Resources */,
 				CB75847D17D78E5400A00F6C /* planes.jpg in Resources */,
+				CB9DA739193A8319002A1365 /* zissou.png in Resources */,
 				CB75847F17D78FF700A00F6C /* only-god2.jpg in Resources */,
 				CB75848117D7911F00A00F6C /* bg-gradiant-top.png in Resources */,
 				CB1FD88017DA700300C5D1BE /* bg-gradiant-bottom.png in Resources */,
